@@ -1,0 +1,39 @@
+<html>
+	<head>
+		<style>
+			body{
+				text-align:center;
+			}
+			.hh1{
+				color:red;
+				font-size:4em;
+			}
+			.hh2{
+				color:green;
+				font-size:3em;
+			}
+			#txt1{
+				width:50%;
+				height:10%;
+				background-color:yellow;
+				font-size:4em;
+				color:red;
+				text-align:center;
+			}
+		</style>
+		<script>
+			function setvalue()
+			{
+				document.getElementById('txt1').value = document.getElementById('sl0').value
+			}
+		</script>
+	</head>
+	<body>
+		<h1 class='hh1'>스마트폰에서 슬라이더 제어 </h1>
+		<hr color='pink'>
+		<input id='txt1' type='text' value='1234'><br>
+		<input id='sl0' type='range' oninput="setvalue()">
+		<hr color='pink'>
+		<h1 class='hh2'> Author : Han Sang Hyuck </h1>
+	</body>
+</html>
